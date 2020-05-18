@@ -31,7 +31,7 @@ class Game(ShowBase):
         node_world = GeomNode('node_map')
         node_sea = GeomNode('node_map')
         t1 = timeit.default_timer()
-        self.hex_map = HexMap(node_world, node_sea, (4, 3))
+        self.hex_map = HexMap(node_world, node_sea, (10, 10))
         print(f"Map creation took : {timeit.default_timer() - t1}")
         # nodes = self.hex_map.nodes
         # complete_map_node = GeomNode("map")
